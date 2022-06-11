@@ -1,6 +1,7 @@
 ---
 import "../styles/index.css"
 import Navbar from "../components/Navbar"
+import ThemeButton from "../components/ThemeButton";
 ---
 <html lang="en">
 	<head>
@@ -9,7 +10,10 @@ import Navbar from "../components/Navbar"
 		<title>Astro</title>
 	</head>
 	<body>
-		<Navbar />
+		
+		<Navbar>
+			<ThemeButton client:only="react"/>
+		</Navbar>
 		<h1>Astro</h1>
 	</body>
 </html>

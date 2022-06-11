@@ -1,4 +1,4 @@
-const NavButton = ({
+const NavLink = ({
   name,
   href,
   imgSrc,
@@ -18,11 +18,13 @@ const NavButton = ({
             src={imgSrc}
             alt={imgAlt}
           />
-          <span className="inline-block mx-2 text-xs sm:text-base">{name}</span>
+          <span className="inline-block mx-2 text-xs sm:text-base dark:text-white">
+            {name}
+          </span>
         </>
       )}
     </a>
   );
 };
 
-export default NavButton;
+export default NavLink;
