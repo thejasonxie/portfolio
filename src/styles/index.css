@@ -10,6 +10,11 @@
 
 @layer components {
   .nav-link {
-    @apply p-2 rounded-xl hover:bg-stone-300;
+    @apply p-2 rounded-xl hover:bg-stone-300 cursor-pointer;
+  }
+  a.nav-link:has(> span) {
+    @apply pt-3;
   }
 }
+
+/* a:has(> span) { */
