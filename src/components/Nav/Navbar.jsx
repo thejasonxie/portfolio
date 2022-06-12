@@ -17,11 +17,13 @@ const Navbar = ({ children: themeBtn }) => {
             <nav className="flex justify-between gap-2">
               <NavLink
                 name="Projects"
+                href="/projects"
                 imgSrc="/assets/projects.png"
                 imgAlt="Projects icon"
               />
               <NavLink
                 name="About me"
+                href="/about"
                 imgSrc="/assets/aboutme.png"
                 imgAlt="About me icon"
               />

@@ -1,14 +1,24 @@
 ---
 import "../styles/index.css"
-import Navbar from "../components/Nav/Navbar"
-import ThemeButton from "../components/Nav/ThemeButton";
-import Footer from "../components/Footer/Footer";
+import Navbar from "@components/Nav/Navbar"
+import ThemeButton from "@components/Nav/ThemeButton";
+import Footer from "@components/Footer/Footer";
 ---
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
 		<title>Jason Xie</title>
+		<!-- This is intentionally inlined to avoid FOUC -->
+		<script is:inline>
+			const root = document.documentElement;
+			const theme = localStorage.getItem('theme');
+			if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+				root.classList.add('dark');
+			} else {
+				root.classList.remove('dark');
+			}
+		</script>
 	</head>
 	<body class="relative dark:bg-slate-800 min-h-screen flex flex-col justify-between">
 		

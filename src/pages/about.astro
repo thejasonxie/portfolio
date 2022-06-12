@@ -1,11 +1,11 @@
 ---
 import "../styles/index.css"
-import Navbar from "../components/Nav/Navbar"
-import ThemeButton from "../components/Nav/ThemeButton";
-import Footer from "../components/Footer/Footer";
+import Navbar from "@components/Nav/Navbar"
+import ThemeButton from "@components/Nav/ThemeButton";
+import Footer from "@components/Footer/Footer";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 ---
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
@@ -21,12 +21,41 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
       <section>
         <article class="flex flex-col gap-10 max-w-3xl mx-auto">
           <h1 class="text-center text-5xl font-black dark:text-white">About me</h1>
-          <p class="text-lg leading-8 text-neutral-500 dark:text-neutral-400">Hi there, I'm Jason Xie. I'm a web developer based in Toronto. I enjoy coding and learning new things. This website is my portfolio to showcase things I've worked on.</p>
-          <p class="text-lg leading-8 text-neutral-500 dark:text-neutral-400">Growing up, I've always known that my career would involve working with computers. At a young age,  I learned that I had a knack for technology. I just knew how to use softwares and devices without being taught. Among my friends and family, I am always the go to person whenever something technology related needs fixing.</p>
-          <p class="text-lg leading-8 text-neutral-500 dark:text-neutral-400">Check out my <a class="group" href="/projects"><span class="dark:hover:text-white hover:font-black underline decoration-solid decoration-2 underline-offset-4">projects</span></a> page to see what I've worked on. Below this page, you can find ways to connect with me and download/view my resume.</p>
+          <p class="text-lg leading-8 text-neutral-500 dark:text-neutral-400">
+            Hi there, I'm Jason Xie. I'm a web developer based in Toronto. 
+            I enjoy coding and learning new things. This website is my portfolio 
+            to showcase things I've worked on.
+          </p>
+          <p class="text-lg leading-8 text-neutral-500 dark:text-neutral-400">
+            Growing up, I've always known that my career would involve working 
+            with computers. At a young age,  I learned that I had a knack for technology. 
+            I just knew how to use softwares and devices without being taught. Among my 
+            friends and family, I am always the go to person whenever something technology 
+            related needs fixing.
+          </p>
+          <p class="text-lg leading-8 text-neutral-500 dark:text-neutral-400">
+            Check out my 
+            <a class="group" href="/projects">
+              <span class="dark:hover:text-white hover:font-black underline decoration-solid decoration-2 underline-offset-4">
+                projects
+              </span>
+            </a> 
+            page to see what I've worked on. Below this page, you can find ways to 
+            <a href="#about-connect" class="group">
+              <span class="dark:hover:text-white hover:font-black underline decoration-solid decoration-2 underline-offset-4">
+                connect
+              </span>
+            </a> 
+            with me and download/view my 
+            <a href="#about-resume" class="group">
+              <span class="dark:hover:text-white hover:font-black underline decoration-solid decoration-2 underline-offset-4">
+                resume.
+              </span>
+            </a>
+          </p>
         </article>
       </section>
-      <section>
+      <section id="about-connect">
         <div class="flex flex-col gap-12">
           <h2 class="text-center text-4xl font-black dark:text-white">Connect</h2>
           <div class="flex flex-row justify-around">
@@ -43,7 +72,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
           </div>
         </div>
       </section>
-      <section>
+      <section id="about-resume">
         <div class="flex flex-col gap-20 mb-24">
           <h2 class="text-center text-4xl font-black dark:text-white">Resume</h2>
           <div class="flex flex-row justify-center gap-5 sm:gap-10">
