@@ -3,7 +3,7 @@ import FooterLink from "./FooterLink";
 
 const Footer = () => {
   return (
-    <footer className=" py-16 bg-neutral-200 dark:bg-neutral-800">
+    <footer className=" py-16 bg-neutral-200 dark:bg-neutral-900">
       <div className="container flex flex-col gap-5">
         <section className="text-center">
           <div className="inline-block">
