@@ -2,11 +2,16 @@
 import Layout from "@layouts/layout.astro";
 ---
 
-<Layout>
-  <main class="container mt-16 sm:mt-32 p-6 text-center flex flex-col justify-between gap-12">
+<Layout title="404 | Jason Xie" description="This is the 404 page of Jason Xie">
+  <main class="container mt-16 sm:mt-32 p-6 text-center flex flex-col justify-between gap-16">
     <h1 class="text-8xl font-black dark:text-white">404</h1>
     <p class="text-2xl leading-8 text-neutral-500 dark:text-neutral-400">
       This page does not exist.
     </p>
+    <a href="/" class="group">
+      <span class="px-10 py-5 rounded-xl border-2 hover:bg-stone-300 dark:hover:bg-stone-700 dark:hover:text-neutral-300 dark:bg-neutral-300">
+        Redirect to Homepage
+      </span>
+    </a>
   </main>
 </Layout>

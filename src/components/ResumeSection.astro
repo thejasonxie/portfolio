@@ -1,0 +1,9 @@
+---
+const { title } = Astro.props;
+---
+
+<section class="tracking-wide leading-6 dark:text-neutral-300">
+  <h3 class="font-black pl-2 tracking-wide dark:text-white">{title}</h3>
+  <hr class="border-2 border-black dark:border-neutral-400 mb-2">
+  <slot />
+</section>

@@ -1,0 +1,104 @@
+---
+import Layout from "@layouts/layout.astro";
+import ResumeSection from "@components/ResumeSection.astro";
+import { FiMail } from "react-icons/fi";
+import { TbWorld } from "react-icons/tb";
+import { MdLocationPin } from "react-icons/md";
+import { FaGithub, FaLinkedin, FaPhoneAlt } from "react-icons/fa";
+---
+
+<Layout title="Resume | Jason Xie" description="This page contains the resume of Jason Xie">
+  <main class="container mt-16 sm:mt-32 p-6 flex flex-col justify-between gap-4 md:gap-12">
+    <h1 class="text-center text-5xl font-black dark:text-white mb-6 md:mb-0">Resume</h1>
+    <a href="/assets/Jason_Xie_Resume.pdf" target="_blank" class="group text-center ">
+      <span class="px-10 py-5 rounded-xl border-2 hover:bg-stone-300 dark:hover:bg-stone-700 dark:hover:text-neutral-300 dark:bg-neutral-300">
+        Download PDF
+      </span>
+    </a>
+    <div class="max-w-3xl mx-auto flex flex-col gap-5 py-10 mb-10">
+      <section class="flex flex-col md:flex-row justify-between gap-1 md:gap-0">
+        <div class="mb-4 md:mb-0 ">
+          <h2 class="text-6xl lg:text-7xl text-center md:text-left font-black dark:text-white">Jason Xie</h2>
+        </div>
+        <div class="flex flex-col gap-1 md:gap-0">
+          <a href="/" class="flex gap-2 dark:text-white justify-center md:justify-start"><TbWorld className="self-center" /><span class="underline underline-offset-2 text-blue-500 dark:text-blue-300">thejasonxie.com</span></a>
+          <a href="https://github.com/thejasonxie" class="flex gap-2 dark:text-white justify-center md:justify-start" target="_blank" class="flex gap-2"><FaGithub className="self-center" /><span class="underline underline-offset-2 text-blue-500 dark:text-blue-300">github.com/thejasonxie</span></a>
+          <a href="https://www.linkedin.com/in/thejasonxie" class="flex gap-2 dark:text-white justify-center md:justify-start" target="_blank" class="flex gap-2"><FaLinkedin className="self-center" /><span class="underline underline-offset-2 text-blue-500 dark:text-blue-300">linkedin.com/in/thejasonxie</span></a>
+        </div>
+        <div class="flex flex-col gap-1 md:gap-0">
+          <a href="mailto:thejasonxie@gmail.com" class="flex gap-2 dark:text-white justify-center md:justify-start"><FiMail className="self-center" /><span class="underline underline-offset-2 text-blue-500 dark:text-blue-300">thejasonxie@gmail.com</span></a>
+          <span class="flex gap-2 dark:text-white justify-center md:justify-start"><FaPhoneAlt className="self-center" /><span>(647) 771-9965</span></span>
+          <span class="flex gap-2 dark:text-white justify-center md:justify-start"><MdLocationPin className="self-cente" /><span>Toronto, Ontario</span></span>
+        </div>
+      </section>
+      <ResumeSection title="SUMMARY">
+        <p class="">
+          Recent computer programming and analysis graduate who is a highly motivated, proficient and result-
+          driven software/web developer with interest and experience in the latest industry technologies.
+          Collaborated/lead in small to medium sized teams academically and professionally with effective
+          communication and interpersonal skills to interact with diverse individuals and groups at all
+          organizational levels.
+        </p>
+      </ResumeSection>
+      <ResumeSection title="SKILLS">
+        <p><strong>Languages</strong>: Javascript, Typescript, Swift, Python, SQL, No-SQL, C/C++, Java, Bash</p>
+        <p><strong>Framework & Library & Tools</strong>: React.js, Jest, TailwindCSS, Node.js, MongoDB, PostgreSQL, Prisma,
+          Firebase, Express.js, Bootstrap, JQuery, Gulp, Webpack, Babel, NPM, Postman, HTTP, Git, HTML, CSS,
+          SwiftUI, Figma</p>
+        </ResumeSection>
+      <ResumeSection title="PROJECTS">
+        <div class="flex flex-col md:flex-row justify-between">
+          <strong>PrivaNote</strong>
+          <span>May 2021 | December 2021</span>
+        </div>
+        <div>
+          <p>A note-taking app that is cross-platform and prioritizes security.</p>
+          <p>Tech used: React.js, Electrion.js, Typescript, TailwindCSS, Prisma, Express.js, GoogleDrive API</p>
+          <a href="https://github.com/privanoteteam/privanote" target="_blank" class="underline underline-offset-2 text-blue-500 dark:text-blue-300">https://github.com/privanoteteam/privanote</a>
+        </div>
+      </ResumeSection>
+      <ResumeSection title="EDUCATION">
+        <div class="flex flex-col md:flex-row justify-between">
+          <span><strong>Seneca College of Applied Arts and Technology</strong> - Toronto, Ontario</span>
+          <span>September 2021 | April 2021</span>
+        </div>
+        <div>
+          <p>Advanced Diploma with Honours in Computer Programming and Analysis</p>
+          <p>President’s Honour List – Winter 2021, Fall 2021, Winter 2022</p>
+        </div>
+      </ResumeSection>
+      <ResumeSection title="WORK EXPERIENCE">
+        <div class="flex flex-col gap-4">
+          <div>
+            <div class="flex flex-col md:flex-row justify-between">
+              <span><strong>Total Credit Recovery Ltd.</strong> - Toronto, Ontario</span>
+              <span>July 2018 | June 2020</span>
+            </div>
+            <div>
+              <p>Positions: Supervisor, Team Lead, Collection Agent</p>
+              <ul class="list-disc list-inside pl-4">
+                <li>Key role in winning the department company's quarterly Team Excellence Award in June 2019</li>
+                <li>Developed SOPs in compliance with client and management policies to guide employees</li>
+                <li>Provided training and reviews to employees resulting in performance and service improvements</li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <div class="flex flex-col md:flex-row justify-between">
+              <span><strong>Tim Hortons</strong> - Toronto, Ontario</span>
+              <span>August 2018 | October 2020</span>
+            </div>
+            <div>
+              <p>Positions: Team Member</p>
+              <ul class="list-disc list-inside pl-4">
+                <li>Collaborated with team in a fast-paced environment to ensure customer's satisfaction</li>
+                <li>Promoted new and seasonal products by upselling to ensure sale quota is met</li>
+                <li>Performed under pressure in a customer-oriented environment</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </ResumeSection>
+    </div>
+  </main>
+</Layout>
