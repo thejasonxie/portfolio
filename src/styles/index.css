@@ -13,3 +13,48 @@
     @apply p-2 rounded-xl sm:hover:bg-stone-300 dark:sm:hover:bg-stone-700 cursor-pointer;
   }
 }
+
+.resume-btn {
+  position: relative;
+}
+
+.resume-btn::before,
+.resume-btn::after {
+  --scale: 0;
+  --tooltip-color: #333;
+  --arrow-size: 10px;
+  --translate-y: ;
+
+  position: absolute;
+  top: -0.25rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(var(--translate-y, 0))
+    scale(var(--scale));
+  transition: 150ms transform;
+  transform-origin: bottom center;
+}
+
+.resume-btn::before {
+  --translate-y: calc(-100% - var(--arrow-size));
+  content: attr(data-tooltip);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  text-align: center;
+  width: max-content;
+  width: 100%;
+  background: var(--tooltip-color);
+}
+
+.resume-btn:hover::before,
+.resume-btm:hover::after {
+  --scale: 1;
+}
+
+.resume-btn::after {
+  --translate-y: calc(-1 * var(--arrow-size));
+  content: "";
+  border: var(--arrow-size) solid transparent;
+  border-top-color: var(--tooltip-color);
+  transform-origin: top center;
+}

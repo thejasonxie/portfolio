@@ -1,0 +1,59 @@
+---
+import "../styles/index.css"
+import Navbar from "../components/Nav/Navbar"
+import ThemeButton from "../components/Nav/ThemeButton";
+import Footer from "../components/Footer/Footer";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+---
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Jason Xie</title>
+	</head>
+	<body class="relative dark:bg-slate-800 min-h-screen flex flex-col justify-between">
+		
+		<Navbar>
+			<ThemeButton client:only="react"/>
+		</Navbar>
+		
+		<main class="container mt-16 sm:mt-32 p-6 flex flex-col justify-between gap-24">
+      <section>
+        <article class="flex flex-col gap-10 max-w-3xl mx-auto">
+          <h1 class="text-center text-5xl font-black dark:text-white">About me</h1>
+          <p class="text-lg leading-8 text-neutral-500 dark:text-neutral-400">Hi there, I'm Jason Xie. I'm a web developer based in Toronto. I enjoy coding and learning new things. This website is my portfolio to showcase things I've worked on.</p>
+          <p class="text-lg leading-8 text-neutral-500 dark:text-neutral-400">Growing up, I've always known that my career would involve working with computers. At a young age,  I learned that I had a knack for technology. I just knew how to use softwares and devices without being taught. Among my friends and family, I am always the go to person whenever something technology related needs fixing.</p>
+          <p class="text-lg leading-8 text-neutral-500 dark:text-neutral-400">Check out my <a class="group" href="/projects"><span class="dark:hover:text-white hover:font-black underline decoration-solid decoration-2 underline-offset-4">projects</span></a> page to see what I've worked on. Below this page, you can find ways to connect with me and download/view my resume.</p>
+        </article>
+      </section>
+      <section>
+        <div class="flex flex-col gap-12">
+          <h2 class="text-center text-4xl font-black dark:text-white">Connect</h2>
+          <div class="flex flex-row justify-around">
+            <a href="mailto:thejasonxie@gmail.com" class="p-6 rounded-2xl hover:bg-stone-300 dark:hover:bg-stone-700">
+              <img class="h-20 w-20 sm:h-40 sm:w-40" src="/assets/gmail.png" alt="">
+            </a>
+            <a href="https://github.com/thejasonxie" target="_blank" class="p-6 rounded-2xl hover:bg-stone-300 dark:hover:bg-stone-700">
+              <FaGithub className="dark:text-white h-20 w-20 sm:h-40 sm:w-40" />
+            </a>
+            <a href="https://www.linkedin.com/in/thejasonxie" target="_blank" class="p-6 rounded-2xl hover:bg-stone-300 dark:hover:bg-stone-700">
+              <FaLinkedin color="rgb(10, 102, 194)"
+              className="dark:bg-white h-20 w-20 sm:h-40 sm:w-40"/>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="flex flex-col gap-20 mb-24">
+          <h2 class="text-center text-4xl font-black dark:text-white">Resume</h2>
+          <div class="flex flex-row justify-center gap-5 sm:gap-10">
+            <a href="/resume" class="group resume-btn" data-tooltip="View resume in webpage"><span class="px-10 py-5 rounded-xl border border-2 hover:bg-stone-300 dark:hover:bg-stone-700 dark:hover:text-neutral-300 dark:bg-neutral-300">Quick View</span></a>
+            <a href="/assets/Jason_Xie_Resume.pdf" data-tooltip="Download resume in PDF format" target="_blank" class="group resume-btn"><span class="px-10 py-5 rounded-xl border border-2 hover:bg-stone-300 dark:hover:bg-stone-700 dark:hover:text-neutral-300 dark:bg-neutral-300">Download PDF</span></a>
+          </div>
+        </div>
+      </section>
+		</main>
+		<Footer />
+		
+	</body>
+</html>
