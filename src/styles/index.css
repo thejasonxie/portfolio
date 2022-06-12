@@ -22,20 +22,19 @@
 .resume-btn::after {
   --scale: 0;
   --tooltip-color: #333;
-  --arrow-size: 10px;
-  --translate-y: ;
+  --arrow-size: 15px;
 
   position: absolute;
   top: -0.25rem;
   left: 50%;
-  transform: translateX(-50%) translateY(var(--translate-y, 0))
+  transform: translate(-50%) translateY(var(--translate-y, 0))
     scale(var(--scale));
-  transition: 150ms transform;
+  transition: 250ms transform;
   transform-origin: bottom center;
 }
 
 .resume-btn::before {
-  --translate-y: calc(-100% - var(--arrow-size));
+  --translate-y: calc(-120% - var(--arrow-size));
   content: attr(data-tooltip);
   color: white;
   padding: 0.5rem;
@@ -47,12 +46,13 @@
 }
 
 .resume-btn:hover::before,
-.resume-btm:hover::after {
+.resume-btn:hover::after {
   --scale: 1;
 }
 
 .resume-btn::after {
-  --translate-y: calc(-1 * var(--arrow-size));
+  --translate-y: calc(-2 * var(--arrow-size));
+
   content: "";
   border: var(--arrow-size) solid transparent;
   border-top-color: var(--tooltip-color);

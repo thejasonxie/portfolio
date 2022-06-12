@@ -10,6 +10,16 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
 		<title>Jason Xie</title>
+    <!-- This is intentionally inlined to avoid FOUC -->
+		<script is:inline>
+			const root = document.documentElement;
+			const theme = localStorage.getItem('theme');
+			if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+				root.classList.add('dark');
+			} else {
+				root.classList.remove('dark');
+			}
+		</script>
 	</head>
 	<body class="relative dark:bg-slate-800 min-h-screen flex flex-col justify-between">
 		
@@ -73,11 +83,19 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
         </div>
       </section>
       <section id="about-resume">
-        <div class="flex flex-col gap-20 mb-24">
+        <div class="flex flex-col gap-24 mb-24">
           <h2 class="text-center text-4xl font-black dark:text-white">Resume</h2>
           <div class="flex flex-row justify-center gap-5 sm:gap-10">
-            <a href="/resume" class="group resume-btn" data-tooltip="View resume in webpage"><span class="px-10 py-5 rounded-xl border border-2 hover:bg-stone-300 dark:hover:bg-stone-700 dark:hover:text-neutral-300 dark:bg-neutral-300">Quick View</span></a>
-            <a href="/assets/Jason_Xie_Resume.pdf" data-tooltip="Download resume in PDF format" target="_blank" class="group resume-btn"><span class="px-10 py-5 rounded-xl border border-2 hover:bg-stone-300 dark:hover:bg-stone-700 dark:hover:text-neutral-300 dark:bg-neutral-300">Download PDF</span></a>
+            <a href="/resume" class="group resume-btn" data-tooltip="View resume in webpage">
+              <span class="px-10 py-5 rounded-xl border-2 hover:bg-stone-300 dark:hover:bg-stone-700 dark:hover:text-neutral-300 dark:bg-neutral-300">
+                Quick View
+              </span>
+            </a>
+            <a href="/assets/Jason_Xie_Resume.pdf" data-tooltip="Download resume in PDF format" target="_blank" class="group resume-btn">
+              <span class="px-10 py-5 rounded-xl border-2 hover:bg-stone-300 dark:hover:bg-stone-700 dark:hover:text-neutral-300 dark:bg-neutral-300">
+                Download PDF
+              </span>
+            </a>
           </div>
         </div>
       </section>
