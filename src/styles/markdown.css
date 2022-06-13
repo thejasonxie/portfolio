@@ -1,40 +1,40 @@
 /*
-  This is styling for markdown content placed inside of an element with class="project-details"
+  This is styling for markdown content placed inside of an element with class="markdown"
 */
 
-.project-details h2 {
+.markdown h2 {
   @apply text-4xl font-bold dark:text-white pt-16 pb-2;
 }
-.project-details h3 {
+.markdown h3 {
   @apply text-2xl font-bold dark:text-white pt-10 pb-1;
 }
-.project-details hr {
+.markdown hr {
   @apply dark:border-neutral-600;
 }
-.project-details hr + ul,
-.project-details hr + ol {
+.markdown hr + ul,
+.markdown hr + ol {
   @apply pt-4;
 }
-.project-details p {
+.markdown p {
   @apply text-lg pt-4 tracking-wide text-neutral-500 dark:text-neutral-300;
 }
-.project-details p > img {
-  @apply p-6 drop-shadow-2xl;
+.markdown p > img {
+  @apply my-6 mx-auto shadow-2xl;
 }
-.project-details ol,
-.project-details ul {
+.markdown ol,
+.markdown ul {
   @apply list-inside pl-6 pb-0 text-lg tracking-wide text-neutral-500 dark:text-neutral-300;
 }
 
-.project-details ol li {
+.markdown ol li {
   @apply list-decimal;
 }
-.project-details ul li {
+.markdown ul li {
   @apply list-disc;
 }
-.project-details a {
+.markdown a {
   @apply underline underline-offset-2 text-blue-500 dark:text-blue-300;
 }
-.project-details code {
+.markdown code {
   @apply px-2 rounded-md text-base text-black bg-neutral-300 dark:bg-neutral-100;
 }

@@ -5,14 +5,14 @@ subtitle: "A note-taking app which prioritizes your security first."
 description: A detailed report of PrivaNote.
 name: Jason Xie
 date: June 12, 2022
-img: "/assets/privanote.png"
+img: "/assets/projects/privanote/privanote.png"
 repoLink: "https://github.com/PrivaNoteTeam/PrivaNote"
 demoLink: "https://www.youtube.com/watch?v=yCYnAPSgYa0&ab_channel=PrivaNoteTeam"
 ---
 
 This project was completed as my school's capstone project during two semesters of my <a href="https://www.senecacollege.ca/programs/fulltime/CPA.html" target="_blank">Computer Programming and Analysis</a> program at <a href="https://www.senecacollege.ca/home.html" target="_blank">Seneca College</a> from May 2021 to December 2021.
 
-The first semester consisted of project planning and management which resulted in building a Software Requirements Specification (SRS) document that can be found <a href="https://docs.google.com/document/d/1ELxASBmFmaZhRiirG6oLVcJKfYo66Z0o/edit?usp=sharing&ouid=116152409118747259916&rtpof=true&sd=true" target="_blank">here.</a> The second semester consisted of implementing the project and the end-result can be found on the project's<a href={frontmatter.repoLink} target="_blank">GitHub repo.</a>
+The first semester consisted of project planning and management which resulted in building a Software Requirements Specification (SRS) document that can be found <a href="https://docs.google.com/document/d/1ELxASBmFmaZhRiirG6oLVcJKfYo66Z0o/edit?usp=sharing&ouid=116152409118747259916&rtpof=true&sd=true" target="_blank">here.</a> The second semester consisted of implementing the project and the end-result can be found on the project's<a href={frontmatter.repoLink} target="_blank">GitHub repo</a> where you can also download and try the app in the <a href="https://github.com/PrivaNoteTeam/PrivaNote/releases/tag/v1.0.0" target="_blank">GitHub releases.</a>
 
 ![PrivaNote UI](https://i.imgur.com/JADxLG1.png)
 
@@ -21,6 +21,7 @@ The first semester consisted of project planning and management which resulted i
 ---
 
 - [What is PrivaNote?](#what-is-privanote)
+- [My Role/Contribution](#my-rolecontribution)
 - [Main Tech Used](#main-tech-used)
   - [ElectronJS](#electronjs)
   - [Language (Typescript)](#language-typescript)
@@ -38,6 +39,16 @@ PrivaNote is a cross-platform desktop note-taking app that provides its end-user
 PrivaNote's UI consists of a file-explorer to see all your notes, a text-editor to edit your notes in Markdown, and a preview window to see your Markdown notes live.
 
 Users have the option to synchronize their notes to Google Drive or to PrivaNote's own cloud storage service that utilizes end-to-end encryption.
+
+## My Role/Contribution
+
+---
+
+In the first semester of developing this project, my role was the team lead. I handled communications with the professor who acted as our client and ensured that all weekly deliverables were delivered by scheduling meetings with the group and monitoring our performance. I lead in writing the project proposals, building the data flow diagrams(DFD) and entity relationship diagrams(ERD), wrote the functional requirements, database scripts, and acceptance criteria.
+
+In the second semester, every team member played the role of a developer to implement the project. I was in charge with mostly handling the back end server which consisted of data synchronization, end-to-end encryption, and deploying the server to heroku to act as an API for our front end client.
+
+![PrivaNote Contributions](/assets/projects/privanote/privanote-contributions.png)
 
 ## Main Tech Used
 
