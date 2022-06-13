@@ -49,6 +49,7 @@ In the first semester of developing this project, my role was the team lead. I h
 In the second semester, every team member played the role of a developer to implement the project. I was in charge with mostly handling the back end server which consisted of data synchronization, end-to-end encryption, and deploying the server to heroku to act as an API for our front end client.
 
 ![PrivaNote Contributions](/assets/projects/privanote/privanote-contributions.png)
+<a href="https://github.com/PrivaNoteTeam/PrivaNote/releases/tag/v1.0.0" target="_blank">Screenshot of GitHub releases.</a>
 
 ## Main Tech Used
 

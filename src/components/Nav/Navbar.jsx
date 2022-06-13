@@ -18,13 +18,13 @@ const Navbar = ({ children: themeBtn }) => {
               <NavLink
                 name="Projects"
                 href="/projects"
-                imgSrc="/assets/projects.png"
+                imgSrc="/assets/icons/projects.png"
                 imgAlt="Projects icon"
               />
               <NavLink
                 name="About me"
                 href="/about"
-                imgSrc="/assets/aboutme.png"
+                imgSrc="/assets/icons/aboutme.png"
                 imgAlt="About me icon"
               />
             </nav>

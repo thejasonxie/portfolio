@@ -45,25 +45,25 @@ const Footer = () => {
               <FooterLink
                 name="Astro"
                 href="https://astro.build/"
-                imgSrc="/assets/astro.png"
+                imgSrc="/assets/icons/astro.png"
                 imgAlt="Astro logo"
               />
               <FooterLink
                 name="Reactjs"
                 href="https://reactjs.org/"
-                imgSrc="/assets/reactjs.png"
+                imgSrc="/assets/icons/reactjs.png"
                 imgAlt="Reactjs logo"
               />
               <FooterLink
                 name="TailwindCSS"
                 href="https://tailwindcss.com/"
-                imgSrc="/assets/tailwindcss.png"
+                imgSrc="/assets/icons/tailwindcss.png"
                 imgAlt="TailwindCSS logo"
               />
               <FooterLink
                 name="Netlify"
                 href="https://www.netlify.com/"
-                imgSrc="/assets/netlify.png"
+                imgSrc="/assets/icons/netlify.png"
                 imgAlt="Netlify logo"
               />
             </div>
