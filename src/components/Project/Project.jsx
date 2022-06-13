@@ -1,14 +1,8 @@
 import ProjectBtn from "./ProjectBtn";
 
-const Project = ({
-  name,
-  description,
-  imgSrc,
-  imgAlt,
-  detailsLink,
-  repoLink,
-  demoLink,
-}) => {
+const Project = ({ name, description, imgSrc, imgAlt, repoLink, demoLink }) => {
+  const detailsLink = "/projects/" + name.toLowerCase();
+
   return (
     <div className="border border-3 border-neutral-400 dark:border-black dark:bg-neutral-800 dark:shadow-inner rounded-xl p-10 w-72 shadow-xl">
       <div className="flex flex-col gap-6">

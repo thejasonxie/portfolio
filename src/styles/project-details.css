@@ -1,0 +1,40 @@
+/*
+  This is styling for markdown content placed inside of an element with class="project-details"
+*/
+
+.project-details h2 {
+  @apply text-4xl font-bold dark:text-white pt-16 pb-2;
+}
+.project-details h3 {
+  @apply text-2xl font-bold dark:text-white pt-10 pb-1;
+}
+.project-details hr {
+  @apply dark:border-neutral-600;
+}
+.project-details hr + ul,
+.project-details hr + ol {
+  @apply pt-4;
+}
+.project-details p {
+  @apply text-lg pt-4 tracking-wide text-neutral-500 dark:text-neutral-300;
+}
+.project-details p > img {
+  @apply p-6 drop-shadow-2xl;
+}
+.project-details ol,
+.project-details ul {
+  @apply list-inside pl-6 pb-0 text-lg tracking-wide text-neutral-500 dark:text-neutral-300;
+}
+
+.project-details ol li {
+  @apply list-decimal;
+}
+.project-details ul li {
+  @apply list-disc;
+}
+.project-details a {
+  @apply underline underline-offset-2 text-blue-500 dark:text-blue-300;
+}
+.project-details code {
+  @apply px-2 rounded-md text-base text-black bg-neutral-300 dark:bg-neutral-100;
+}

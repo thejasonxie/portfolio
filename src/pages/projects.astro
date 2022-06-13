@@ -1,10 +1,10 @@
 ---
-import Layout from "@layouts/layout.astro";
+import MainLayout from "@layouts/MainLayout.astro";
 import Project from "@components/Project/Project.jsx"
 ---
 
-<Layout title="Projects | Jason Xie" description="The projects page of Jason Xie">
-  <main class="container my-16 sm:my-32 p-6 flex flex-col justify-between gap-8 sm:gap-12">
+<MainLayout title="Projects" description="The projects page of Jason Xie">
+  <div class="flex flex-col justify-between gap-8 sm:gap-12">
     <div class="text-center flex flex-col gap-4">
       <h1 class="text-5xl font-black dark:text-white">Projects</h1>
       <p class="text-2xl text-neutral-400 dark:text-neutral-500">View them all on my
@@ -18,10 +18,9 @@ import Project from "@components/Project/Project.jsx"
         description="A note-taking app which prioritizes your security first."
         imgSrc="assets/privanote.png"
         imgAlt="PrivaNote icon"
-        detailsLink="/projects/privanote"
         repoLink="https://github.com/privanoteteam/privanote"
         demoLink="https://www.youtube.com/watch?v=yCYnAPSgYa0&ab_channel=PrivaNoteTeam"
       />
     </section>
-  </main>
-</Layout>
+  </div>
+</MainLayout>

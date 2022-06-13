@@ -1,5 +1,5 @@
 ---
-import Layout from "@layouts/layout.astro";
+import MainLayout from "@layouts/MainLayout.astro";
 import ResumeSection from "@components/ResumeSection.astro";
 import { FiMail } from "react-icons/fi";
 import { TbWorld } from "react-icons/tb";
@@ -7,16 +7,16 @@ import { MdLocationPin } from "react-icons/md";
 import { FaGithub, FaLinkedin, FaPhoneAlt } from "react-icons/fa";
 ---
 
-<Layout title="Resume | Jason Xie" description="This page contains the resume of Jason Xie">
-  <main class="container mt-16 sm:mt-32 p-6 flex flex-col justify-between gap-4">
+<MainLayout title="Resume" description="This page contains the resume of Jason Xie">
+  <div class="flex flex-col justify-between gap-4">
     <h1 class="text-center text-5xl font-black dark:text-white md:mb-0">Resume</h1>
     <p class="text-center dark:text-white mb-8">Updated June 12, 2022</p>
-    <a href="/assets/Jason_Xie_Resume.pdf" target="_blank" class="group text-center ">
+    <a href="/assets/Jason_Xie_Resume.pdf" target="_blank" class="group text-center mb-8">
       <span class="px-10 py-5 rounded-xl border-2 hover:bg-stone-300 dark:hover:bg-stone-700 dark:hover:text-neutral-300 dark:bg-neutral-300">
         Download PDF
       </span>
     </a>
-    <div class="max-w-3xl mx-auto flex flex-col gap-5 py-10 mb-10">
+    <div class="max-w-3xl mx-auto flex flex-col gap-5">
       <section class="flex flex-col md:flex-row justify-between gap-1 md:gap-0">
         <div class="mb-4 md:mb-0 ">
           <h2 class="text-6xl lg:text-7xl text-center md:text-left font-black dark:text-white">Jason Xie</h2>
@@ -101,5 +101,5 @@ import { FaGithub, FaLinkedin, FaPhoneAlt } from "react-icons/fa";
         </div>
       </ResumeSection>
     </div>
-  </main>
-</Layout>
+  </div>
+</MainLayout>

@@ -1,11 +1,10 @@
 ---
-import Layout from "@layouts/layout.astro";
+import MainLayout from "@layouts/MainLayout.astro";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 ---
 
-<Layout title="About me | Jason Xie" description="The about me page of Jason Xie">
-		
-  <main class="container my-16 sm:my-32 p-6 flex flex-col justify-between gap-24">
+<MainLayout title="About me" description="The about me page of Jason Xie">	
+  <div class="flex flex-col justify-between gap-24">
     <section>
       <article class="flex flex-col gap-10 max-w-3xl mx-auto">
         <div class="text-center flex flex-col gap-4">
@@ -78,6 +77,5 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
         </div>
       </div>
     </section>
-  </main>
-
-</Layout>
+  </div>
+</MainLayout>
