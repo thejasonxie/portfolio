@@ -5,23 +5,26 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 <Layout title="About me | Jason Xie" description="The about me page of Jason Xie">
 		
-  <main class="container mt-16 sm:mt-32 p-6 flex flex-col justify-between gap-24">
+  <main class="container my-16 sm:my-32 p-6 flex flex-col justify-between gap-24">
     <section>
       <article class="flex flex-col gap-10 max-w-3xl mx-auto">
-        <h1 class="text-center text-5xl font-black dark:text-white">About me</h1>
-        <p class="text-lg leading-8 text-neutral-500 dark:text-neutral-400">
+        <div class="text-center flex flex-col gap-4">
+          <h1 class="text-5xl font-black dark:text-white">About me</h1>
+          <p class="text-2xl text-neutral-400 dark:text-neutral-500">Web Developer.</p>
+        </div>
+        <p class="text-lg leading-8 text-neutral-500 dark:text-neutral-300">
           Hi there, I'm Jason Xie. I'm a web developer based in Toronto. 
           I enjoy coding and learning new things. This website is my portfolio 
           to showcase things I've worked on.
         </p>
-        <p class="text-lg leading-8 text-neutral-500 dark:text-neutral-400">
+        <p class="text-lg leading-8 text-neutral-500 dark:text-neutral-300">
           Growing up, I've always known that my career would involve working 
           with computers. At a young age,  I learned that I had a knack for technology. 
           I just knew how to use softwares and devices without being taught. Among my 
           friends and family, I am always the go to person whenever something technology 
           related needs fixing.
         </p>
-        <p class="text-lg leading-8 text-neutral-500 dark:text-neutral-400">
+        <p class="text-lg leading-8 text-neutral-500 dark:text-neutral-300">
           Check out my 
           <a class="group" href="/projects">
             <span class="hover:text-white dark:hover:text-black hover:bg-neutral-800 dark:hover:bg-neutral-100 underline decoration-solid decoration-2 underline-offset-4">
@@ -59,7 +62,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
       </div>
     </section>
     <section id="about-resume">
-      <div class="flex flex-col gap-24 mb-24">
+      <div class="flex flex-col gap-24">
         <h2 class="text-center text-4xl font-black dark:text-white">Resume</h2>
         <div class="flex flex-row justify-center gap-5 sm:gap-10">
           <a href="/resume" class="group resume-btn" data-tooltip="View resume in webpage">
