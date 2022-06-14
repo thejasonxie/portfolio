@@ -1,7 +1,7 @@
 import ProjectBtn from "./ProjectBtn";
 
 const Project = ({ name, description, imgSrc, imgAlt, repoLink, demoLink }) => {
-  const detailsLink = "/projects/" + name.toLowerCase();
+  const detailsLink = "/projects/" + name.replace(/\s+/g, "-").toLowerCase();
 
   return (
     <div className="border border-3 border-neutral-400 dark:border-black dark:bg-neutral-800 dark:shadow-inner rounded-xl p-10 w-72 shadow-xl">
@@ -14,8 +14,8 @@ const Project = ({ name, description, imgSrc, imgAlt, repoLink, demoLink }) => {
           src={imgSrc}
           alt={imgAlt}
         />
-        <div className="flex flex-row justify-between">
-          <ProjectBtn name="Details" href={detailsLink} />
+        <div className="flex flex-row justify-between text-sm">
+          <ProjectBtn name="Overview" href={detailsLink} />
           <ProjectBtn name="Repo" href={repoLink} target="_blank" />
           <ProjectBtn name="Demo" href={demoLink} target="_blank" />
         </div>

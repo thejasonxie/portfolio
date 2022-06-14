@@ -2,7 +2,7 @@
 layout: ../../layouts/ProjectLayout.astro
 title: "PrivaNote"
 subtitle: "A note-taking app which prioritizes your security first."
-description: A detailed report of PrivaNote.
+description: An overview of PrivaNote.
 name: Jason Xie
 date: June 12, 2022
 img: "/assets/projects/privanote/privanote.png"
@@ -25,8 +25,8 @@ The first semester consisted of project planning and management which resulted i
 - [Main Tech Used](#main-tech-used)
   - [ElectronJS](#electronjs)
   - [Language (Typescript)](#language-typescript)
-  - [Front end (ReactJs + TailwindCSS)](#front-end-reactjs--tailwindcss)
-  - [Back end (Node + Express)](#back-end-node-express)
+  - [Front-end (ReactJS + TailwindCSS)](#front-end-reactjs--tailwindcss)
+  - [Back-end (Node + Express)](#back-end-node-express)
   - [Data Storage (PostgreSQL + Prisma + Google Drive API](#data-storage-postgresql--prisma--google-drive-api)
 - [Team](#team)
 
@@ -46,7 +46,7 @@ Users have the option to synchronize their notes to Google Drive or to PrivaNote
 
 In the first semester of developing this project, my role was the team lead. I handled communications with the professor who acted as our client and ensured that all weekly deliverables were delivered by scheduling meetings with the group and monitoring our performance. I lead in writing the project proposals, building the data flow diagrams(DFD) and entity relationship diagrams(ERD), wrote the functional requirements, database scripts, and acceptance criteria.
 
-In the second semester, every team member played the role of a developer to implement the project. I was in charge with mostly handling the back end server which consisted of data synchronization, end-to-end encryption, and deploying the server to heroku to act as an API for our front end client.
+In the second semester, every team member played the role of a developer to implement the project. I was in charge with mostly handling the back-end server which consisted of data synchronization, end-to-end encryption, and deploying the server to Heroku to act as an API for our front-end client.
 
 ![PrivaNote Contributions](/assets/projects/privanote/privanote-contributions.png)
 <a href="https://github.com/PrivaNoteTeam/PrivaNote/releases/tag/v1.0.0" target="_blank">Screenshot of GitHub releases.</a>
@@ -65,13 +65,13 @@ To enable PrivaNote to be used on Mac, Windows, and Linux, ElectronJS was used t
 
 To ease the collaboration process, Typescript was used to help build and manage PrivaNote.
 
-### Front end (ReactJS + TailwindCSS)
+### Front-end (ReactJS + TailwindCSS)
 
 ReactJS was used to develop PrivaNote's client along with TailwindCSS for styling.
 
-### Back end (Node + Express)
+### Back-end (Node + Express)
 
-The back end server was built with Node and Express to keep it consistent with the front end client language. This was also what the team was most familiar with.
+The back-end server was built with Node and Express to keep it consistent with the front-end client language. This was also what the team was most familiar with.
 
 ### Data Storage (PostgreSQL + Prisma + Google Drive API)
 

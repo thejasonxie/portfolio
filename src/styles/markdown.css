@@ -8,11 +8,16 @@
 .markdown h3 {
   @apply text-2xl font-bold dark:text-white pt-10 pb-1;
 }
+.markdown h4 {
+  @apply text-xl font-bold dark:text-white pt-10 pb-1;
+}
 .markdown hr {
   @apply dark:border-neutral-600;
 }
 .markdown hr + ul,
-.markdown hr + ol {
+.markdown hr + ol,
+.markdown p + ul,
+.markdown p + ol {
   @apply pt-4;
 }
 .markdown p {
@@ -27,10 +32,13 @@
 }
 
 .markdown ol li {
-  @apply list-decimal;
+  @apply list-decimal py-2;
 }
 .markdown ul li {
   @apply list-disc;
+}
+.markdown li > p:first-child {
+  @apply inline;
 }
 .markdown a {
   @apply underline underline-offset-2 text-blue-500 dark:text-blue-300;
