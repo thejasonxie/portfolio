@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { FiSun, FiMoon } from "react-icons/fi";
+import { FiSun, FiMoon } from "react-icons/fi/index.js";
 
 const ThemeButton = () => {
   const [theme, setTheme] = useState(() => {

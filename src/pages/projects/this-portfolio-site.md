@@ -92,7 +92,7 @@ As previously mentioned, I wanted to show a collection of projects that I can ea
 
 Here would be my development workflow when I need to add a project to my portfolio:
 
-1. Add a `<Project />` component with props to describe it to my `projects.astro` page.
+1. Add a `<Project />` component with props to describe it to the `projects.astro` page.
 
    ![Project component](/assets/projects/portfolio/project-component.png)
 
@@ -127,4 +127,4 @@ As of right now, Astro does not have a first-party solution for optimizing image
 
 However, because Astro is still in beta and will soon have its official release, I opted not to use any third-party integrations but instead, manually compress my images with <a href="https://tinypng.com" target="_blank">TinyPNG.</a>
 
-Astro plans to implement Image component, possibly using <a href="https://www.npmjs.com/package/vite-imagetools" target="_blank">vite-imagetools</a>, after their V1.0 official release as outlined in their <a href="https://github.com/withastro/rfcs/discussions/161" target="_blank">roadmap.</a>
+Astro plans to implement an Image component, possibly using <a href="https://www.npmjs.com/package/vite-imagetools" target="_blank">vite-imagetools</a>, after their V1.0 official release as outlined in their <a href="https://github.com/withastro/rfcs/discussions/161" target="_blank">roadmap.</a>
