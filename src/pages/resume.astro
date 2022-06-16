@@ -2,9 +2,8 @@
 import MainLayout from "@layouts/MainLayout.astro";
 import ResumeSection from "@components/ResumeSection.astro";
 import { FiMail } from "react-icons/fi/index.js";
-import { TbWorld } from "react-icons/tb/index.js";
 import { MdLocationPin } from "react-icons/md/index.js";
-import { FaGithub, FaLinkedin, FaPhoneAlt } from "react-icons/fa/index.js";
+import { FaGithub, FaLinkedin, FaPhoneAlt, FaGlobe} from "react-icons/fa/index.js";
 ---
 
 <MainLayout title="Resume" description="This page contains the resume of Jason Xie">
@@ -12,17 +11,17 @@ import { FaGithub, FaLinkedin, FaPhoneAlt } from "react-icons/fa/index.js";
     <h1 class="text-center text-5xl font-black dark:text-white md:mb-0">Resume</h1>
     <p class="text-center dark:text-white mb-8">Updated June 12, 2022</p>
     <a href="/assets/documents/Jason_Xie_Resume.pdf" target="_blank" class="group text-center mb-8">
-      <span class="px-10 py-5 rounded-xl border-2 hover:bg-stone-300 dark:hover:bg-stone-700 dark:hover:text-neutral-300 dark:bg-neutral-300">
+      <span class="inline-block text-center px-10 py-5 rounded-xl border-2 hover:bg-stone-300 dark:hover:bg-stone-700 dark:hover:text-neutral-300 dark:bg-neutral-300">
         Download PDF
       </span>
     </a>
     <div class="max-w-3xl mx-auto flex flex-col gap-5">
       <section class="flex flex-col md:flex-row justify-between gap-1 md:gap-0">
         <div class="mb-4 md:mb-0 ">
-          <h2 class="text-6xl lg:text-7xl text-center md:text-left font-black dark:text-white">Jason Xie</h2>
+          <h2 class="text-5xl md:text-6xl lg:text-7xl text-center md:text-left font-black dark:text-white">Jason Xie</h2>
         </div>
         <div class="flex flex-col gap-1 md:gap-0">
-          <a href="/" class="flex gap-2 dark:text-white justify-center md:justify-start"><TbWorld className="self-center" /><span class="underline underline-offset-2 text-blue-500 dark:text-blue-300">thejasonxie.com</span></a>
+          <a href="/" class="flex gap-2 dark:text-white justify-center md:justify-start"><FaGlobe className="self-center" /><span class="underline underline-offset-2 text-blue-500 dark:text-blue-300">thejasonxie.com</span></a>
           <a href="https://github.com/thejasonxie" class="flex gap-2 dark:text-white justify-center md:justify-start" target="_blank" class="flex gap-2"><FaGithub className="self-center" /><span class="underline underline-offset-2 text-blue-500 dark:text-blue-300">github.com/thejasonxie</span></a>
           <a href="https://www.linkedin.com/in/thejasonxie" class="flex gap-2 dark:text-white justify-center md:justify-start" target="_blank" class="flex gap-2"><FaLinkedin className="self-center" /><span class="underline underline-offset-2 text-blue-500 dark:text-blue-300">linkedin.com/in/thejasonxie</span></a>
         </div>

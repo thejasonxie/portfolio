@@ -41,30 +41,34 @@ const Footer = () => {
             <span className="text-neutral-600 dark:text-neutral-500">
               Made with:
             </span>
-            <div className="flex gap-10 sm:gap-4 mt-2">
+            <div className="flex flex-row gap-4 sm:gap-4 mt-2">
               <FooterLink
                 name="Astro"
                 href="https://astro.build/"
                 imgSrc="/assets/icons/astro.png"
                 imgAlt="Astro logo"
+                className="basis-1/2"
               />
               <FooterLink
                 name="Reactjs"
                 href="https://reactjs.org/"
                 imgSrc="/assets/icons/reactjs.png"
                 imgAlt="Reactjs logo"
+                className="basis-1/2"
               />
               <FooterLink
                 name="TailwindCSS"
                 href="https://tailwindcss.com/"
                 imgSrc="/assets/icons/tailwindcss.png"
                 imgAlt="TailwindCSS logo"
+                className="basis-1/2"
               />
               <FooterLink
                 name="Netlify"
                 href="https://www.netlify.com/"
                 imgSrc="/assets/icons/netlify.png"
                 imgAlt="Netlify logo"
+                className="basis-1/2"
               />
             </div>
           </div>

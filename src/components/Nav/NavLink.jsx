@@ -18,7 +18,7 @@ const NavLink = ({
             src={imgSrc}
             alt={imgAlt}
           />
-          <span className="inline-block mx-2 text-xs sm:text-base dark:text-white">
+          <span className="inline-block mx-2 text-xs text-center sm:text-base dark:text-white">
             {name}
           </span>
         </>

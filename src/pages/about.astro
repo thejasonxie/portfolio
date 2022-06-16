@@ -47,13 +47,13 @@ import { FaGithub, FaLinkedin } from "react-icons/fa/index.js";
       <div class="flex flex-col gap-12">
         <h2 class="text-center text-4xl font-black dark:text-white">Connect</h2>
         <div class="flex flex-row justify-around">
-          <a href="mailto:thejasonxie@gmail.com" class="p-6 rounded-2xl hover:bg-stone-300 dark:hover:bg-stone-700">
-            <img class="h-20 w-20 sm:h-40 sm:w-40" src="/assets/icons/gmail.png" alt="">
+          <a href="mailto:thejasonxie@gmail.com" class="inline-block h-20 w-20 sm:h-52 sm:w-52 sm:p-6 rounded-2xl hover:bg-stone-300 dark:hover:bg-stone-700">
+            <img class="w-full" src="/assets/icons/gmail.png" alt="Gmail icon">
           </a>
-          <a href="https://github.com/thejasonxie" target="_blank" class="p-6 rounded-2xl hover:bg-stone-300 dark:hover:bg-stone-700">
+          <a href="https://github.com/thejasonxie" target="_blank" class="sm:p-6 rounded-2xl hover:bg-stone-300 dark:hover:bg-stone-700">
             <FaGithub className="dark:text-white h-20 w-20 sm:h-40 sm:w-40" />
           </a>
-          <a href="https://www.linkedin.com/in/thejasonxie" target="_blank" class="p-6 rounded-2xl hover:bg-stone-300 dark:hover:bg-stone-700">
+          <a href="https://www.linkedin.com/in/thejasonxie" target="_blank" class="sm:p-6 rounded-2xl hover:bg-stone-300 dark:hover:bg-stone-700">
             <FaLinkedin color="rgb(10, 102, 194)"
             className="dark:bg-white h-20 w-20 sm:h-40 sm:w-40"/>
           </a>
@@ -61,16 +61,16 @@ import { FaGithub, FaLinkedin } from "react-icons/fa/index.js";
       </div>
     </section>
     <section id="about-resume">
-      <div class="flex flex-col gap-24">
+      <div class="flex flex-col gap-12 sm:gap-24">
         <h2 class="text-center text-4xl font-black dark:text-white">Resume</h2>
-        <div class="flex flex-row justify-center gap-5 sm:gap-10">
+        <div class="flex flex-row justify-center gap-4 sm:gap-10">
           <a href="/resume" class="group resume-btn" data-tooltip="View resume in webpage">
-            <span class="px-10 py-5 rounded-xl border-2 hover:bg-stone-300 dark:hover:bg-stone-700 dark:hover:text-neutral-300 dark:bg-neutral-300">
+            <span class="inline-block text-center px-10 py-5 rounded-xl border-2 hover:bg-stone-300 dark:hover:bg-stone-700 dark:hover:text-neutral-300 dark:bg-neutral-300">
               Quick View
             </span>
           </a>
           <a href="/assets/documents/Jason_Xie_Resume.pdf" data-tooltip="Download resume in PDF format" target="_blank" class="group resume-btn">
-            <span class="px-10 py-5 rounded-xl border-2 hover:bg-stone-300 dark:hover:bg-stone-700 dark:hover:text-neutral-300 dark:bg-neutral-300">
+            <span class="inline-block text-center px-10 py-5 rounded-xl border-2 hover:bg-stone-300 dark:hover:bg-stone-700 dark:hover:text-neutral-300 dark:bg-neutral-300">
               Download PDF
             </span>
           </a>

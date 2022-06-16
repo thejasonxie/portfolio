@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,7 +10,7 @@
 
 @layer components {
   .nav-link {
-    @apply p-2 rounded-xl sm:hover:bg-stone-300 dark:sm:hover:bg-stone-700 cursor-pointer;
+    @apply sm:p-2 rounded-xl sm:hover:bg-stone-300 dark:sm:hover:bg-stone-700 cursor-pointer;
   }
 }
 

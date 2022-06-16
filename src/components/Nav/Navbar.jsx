@@ -6,7 +6,7 @@ const Navbar = ({ children: themeBtn }) => {
     <header className="fixed top-0 w-full z-50">
       <nav className="bg-neutral-200 h-16 dark:bg-neutral-800 border-b-2 border-neutral-300 dark:border-neutral-900">
         <div className="container h-full items-center flex justify-between">
-          <section className="pl-4">
+          <section className="px-4">
             <NavLink href="/" extraClass="pt-3">
               <span className="text-lg sm:text-2xl inline-block dark:text-white">
                 Jason Xie
@@ -14,7 +14,7 @@ const Navbar = ({ children: themeBtn }) => {
             </NavLink>
           </section>
           <section>
-            <nav className="flex justify-between gap-2">
+            <nav className="flex justify-between">
               <NavLink
                 name="Projects"
                 href="/projects"
