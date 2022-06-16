@@ -14,6 +14,8 @@ const NavLink = ({
       ) : (
         <>
           <img
+            width="24"
+            height="24"
             className="w-6 h-6 sm:inline-block mx-auto"
             src={imgSrc}
             alt={imgAlt}

@@ -8,6 +8,8 @@ const FooterLink = ({ name, href, imgSrc, imgAlt }) => {
       >
         <div className="flex w-8 h-8 mx-auto">
           <img
+            height="32"
+            width="32"
             src={imgSrc}
             alt={imgAlt}
             className="mx-auto object-contain max-h-full max-w-full"
