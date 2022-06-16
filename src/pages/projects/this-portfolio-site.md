@@ -24,6 +24,7 @@ After over a hundred job applications and countless of rejections, I've come to 
     - [3.1 Navbar Component](#navbar-component)
     - [3.2 Managing Projects](#managing-projects)
     - [3.2 About Me](#about-me)
+- [Performance Review](#performance-review)
 - [Future Fixes](#future-fixes)
 
 ## The Goal
@@ -118,6 +119,18 @@ What I find neat about this page is the <a href="/about#about-resume" target="_b
 ![About me resume section](/assets/projects/portfolio/aboutme-resume.png)
 
 The Quick View button displays my resume in html format that looks exactly like the resume in PDF format.
+
+## Performance Review
+
+---
+
+To test out the performace of my portfolio, I used the <a href="https://web.dev/measure/" target="_blank">Measure tool</a> provided by <a href="https://web.dev/" target="_blank">web.dev</a>. Below are the audits for all the pages on my portfolio.
+
+![Performance audit of my index page](/assets/projects/portfolio/index-audit.png)
+![Performance audit of my projects page](/assets/projects/portfolio/projects-audit.png)
+![Performance audit of my privanote page](/assets/projects/portfolio/projects-privanote-audit.png)
+![Performance audit of my about page](/assets/projects/portfolio/about-audit.png)
+![Performance audit of my resume page](/assets/projects/portfolio/resume-audit.png)
 
 ## Future Fixes
 
