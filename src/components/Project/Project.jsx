@@ -5,12 +5,14 @@ const Project = ({ name, description, imgSrc, imgAlt, repoLink, demoLink }) => {
 
   return (
     <div className="border border-3 border-neutral-400 dark:border-black dark:bg-neutral-800 dark:shadow-inner rounded-xl px-6 py-10 sm:p-10 w-64 sm:w-72 shadow-xl">
-      <div className="flex flex-col gap-6">
-        <h2 className="text-2xl text-center font-bold dark:text-white">
-          {name}
-        </h2>
+      <div className="flex flex-col gap-4">
+        <div className="h-16 flex flex-col justify-center">
+          <h2 className="text-2xl text-center font-bold dark:text-white">
+            {name}
+          </h2>
+        </div>
         <img
-          className="w-36 h-36 mx-auto drop-shadow-xl"
+          className="w-36 h-36 mx-auto mb-2 drop-shadow-lg"
           src={imgSrc}
           alt={imgAlt}
         />
