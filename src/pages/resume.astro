@@ -9,7 +9,7 @@ import { FaGithub, FaLinkedin, FaPhoneAlt, FaGlobe} from "react-icons/fa/index.j
 <MainLayout title="Resume" description="This page contains the resume of Jason Xie">
   <div class="flex flex-col justify-between gap-4">
     <h1 class="text-center text-5xl font-black dark:text-white md:mb-0">Resume</h1>
-    <p class="text-center dark:text-white mb-8">Updated June 12, 2022</p>
+    <p class="text-center dark:text-white mb-8">Updated July 23, 2022</p>
     <a href="/assets/documents/Jason_Xie_Resume.pdf" target="_blank" class="group text-center mb-8">
       <span class="inline-block text-center px-10 py-5 rounded-xl border-2 hover:bg-stone-300 dark:hover:bg-stone-700 dark:hover:text-neutral-300 dark:bg-neutral-300">
         Download PDF
@@ -33,8 +33,8 @@ import { FaGithub, FaLinkedin, FaPhoneAlt, FaGlobe} from "react-icons/fa/index.j
       </section>
       <ResumeSection title="SUMMARY">
         <p>
-          Recent computer programming and analysis graduate who is a highly motivated, proficient and result-
-          driven software/web developer with interest and experience in the latest industry technologies.
+          Recent computer programming and analysis graduate who is a motivated, proficient and result-
+          driven web developer with interest and experience in the latest industry technologies.
           Collaborated/lead in small to medium sized teams academically and professionally with effective
           communication and interpersonal skills to interact with diverse individuals and groups at all
           organizational levels.
@@ -42,19 +42,34 @@ import { FaGithub, FaLinkedin, FaPhoneAlt, FaGlobe} from "react-icons/fa/index.j
       </ResumeSection>
       <ResumeSection title="SKILLS">
         <p><strong>Languages</strong>: Javascript, Typescript, Swift, Python, SQL, No-SQL, C/C++, Java, Bash</p>
-        <p><strong>Framework & Library & Tools</strong>: React.js, Jest, TailwindCSS, Node.js, MongoDB, PostgreSQL, Prisma,
-          Firebase, Express.js, Bootstrap, JQuery, Gulp, Webpack, Babel, NPM, Postman, HTTP, Git, HTML, CSS,
+        <p><strong>Framework & Library & Tools</strong>: React.js, Next.js, Jest, TailwindCSS, Node.js, MongoDB, PostgreSQL, 
+          PostGIS, Spring Boot, Prisma, Firebase, Express.js, Bootstrap, JQuery, Gulp, Webpack, Babel, NPM, Postman, HTTP, Git, HTML, CSS,
           SwiftUI, Figma</p>
         </ResumeSection>
       <ResumeSection title="PROJECTS">
-        <div class="flex flex-col md:flex-row justify-between">
-          <strong>PrivaNote</strong>
-          <span>May 2021 | December 2021</span>
-        </div>
-        <div>
-          <p>A note-taking app that is cross-platform and prioritizes security.</p>
-          <p>Tech used: React.js, Electrion.js, Typescript, TailwindCSS, Prisma, Express.js, GoogleDrive API</p>
-          <a href="https://github.com/privanoteteam/privanote" target="_blank" class="underline underline-offset-2 text-blue-500 dark:text-blue-300">https://github.com/privanoteteam/privanote</a>
+        <div class="flex flex-col gap-5">
+          <div>
+            <div class="flex flex-col md:flex-row justify-between">
+              <strong>Block Group Interpolation</strong>
+              <span>July 2022</span>
+            </div>
+            <div>
+              <p>Demographic analysis in a given circle of a cencus polygon.</p>
+              <p>Tech used: React.js, Mapbox, Turf.js, TailwindCSS, Spring Boot, PostgreSQL, PostGIS</p>
+              <a href="https://block-group-interpolation.herokuapp.com/" target="_blank" class="underline underline-offset-2 text-blue-500 dark:text-blue-300">https://block-group-interpolation.herokuapp.com/</a>
+            </div>
+          </div>
+          <div>
+            <div class="flex flex-col md:flex-row justify-between">
+              <strong>PrivaNote</strong>
+              <span>May 2021 | December 2021</span>
+            </div>
+            <div>
+              <p>A note-taking app that is cross-platform and prioritizes security.</p>
+              <p>Tech used: React.js, Electrion.js, Typescript, TailwindCSS, Prisma, Express.js, GoogleDrive API</p>
+              <a href="https://github.com/privanoteteam/privanote" target="_blank" class="underline underline-offset-2 text-blue-500 dark:text-blue-300">https://github.com/privanoteteam/privanote</a>
+            </div>
+          </div>
         </div>
       </ResumeSection>
       <ResumeSection title="EDUCATION">
@@ -64,7 +79,6 @@ import { FaGithub, FaLinkedin, FaPhoneAlt, FaGlobe} from "react-icons/fa/index.j
         </div>
         <div>
           <p>Advanced Diploma with Honours in Computer Programming and Analysis</p>
-          <p>President’s Honour List – Winter 2021, Fall 2021, Winter 2022</p>
         </div>
       </ResumeSection>
       <ResumeSection title="WORK EXPERIENCE">
