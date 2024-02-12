@@ -41,14 +41,17 @@ const getJwk = async (token: string) => {
   return jwk;
 };
 
-export const AuthMiddleware = async ({ bearer }: any) => {
+export const AuthMiddleware = async (context: any) => {
   try {
+    const { bearer } = context;
+    if (!bearer) throw new Error("No token provided");
+
     const jwk = await getJwk(bearer);
     const publicKey = jwkToPem(jwk);
 
     const payload = jwt.verify(bearer, publicKey, { algorithms: ["RS256"] });
 
-    console.log("Token is valid", payload);
+    context.userClaims = payload;
   } catch (error: any) {
     console.error("Token is invalid: ", error.message);
     return createResponse(401, { error: { message: "Unauthorized" } });
@@ -71,12 +74,16 @@ const cognitoJwtVerifier = CognitoJwtVerifier.create({
   tokenUse: "access",
 });
 
-export const AuthMiddleware = async ({ bearer }: any) => {
+export const AuthMiddleware = async (context: any) => {
   try {
+    const { bearer } = context;
+    if (!bearer) throw new Error("No token provided");
+
     const payload = await cognitoJwtVerifier.verify(bearer, {
       clientId: process.env.AWS_COGNITO_USER_CLIENT_ID as string,
     });
-    console.log("Token is valid", payload);
+
+    context.userClaims = payload;
   } catch (error: any) {
     console.error("Token is invalid: ", error.message);
     return createResponse(401, { error: { message: "Unauthorized" } });
