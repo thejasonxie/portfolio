@@ -22,6 +22,12 @@ const Navbar = ({ children: themeBtn }) => {
                 imgAlt="Projects icon"
               />
               <NavLink
+                name="Blog"
+                href="/blog"
+                imgSrc="/assets/icons/projects.png"
+                imgAlt="Blog icon"
+              />
+              <NavLink
                 name="About me"
                 href="/about"
                 imgSrc="/assets/icons/aboutme.png"

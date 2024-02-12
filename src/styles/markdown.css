@@ -43,6 +43,11 @@
 .markdown a {
   @apply underline underline-offset-2 text-blue-500 dark:text-blue-300;
 }
-.markdown code {
+
+/* .markdown code {
   @apply px-2 rounded-md text-base text-black bg-neutral-300 dark:bg-neutral-100;
+}*/
+
+.markdown pre {
+  @apply my-6 p-8 rounded-md;
 }
