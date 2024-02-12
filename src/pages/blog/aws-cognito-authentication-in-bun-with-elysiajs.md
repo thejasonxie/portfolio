@@ -13,6 +13,9 @@ date: Feb 11, 2024
 1. Setup bearer and add a handler function that will be our authentication middleware to ElysiaJS
 
 ```ts
+import bearer from "@elysiajs/bearer";
+// import AuthMiddleware from ...
+
 const router = new Elysia();
 
 router.get("/health", HealthController.getHealth);
