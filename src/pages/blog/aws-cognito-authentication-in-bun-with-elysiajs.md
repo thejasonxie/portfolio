@@ -2,7 +2,7 @@
 layout: ../../layouts/BlogLayout.astro
 title: "AWS Cognito Authentication in Bun with ElysiaJS"
 subtitle: "A guide on how to set up AWS Cognito authentication in Bun with ElysiaJS"
-description: An overview of PrivaNote.
+description: AWS Cognito Authentication in Bun with ElysiaJS.
 name: Jason Xie
 date: Feb 11, 2022
 # img: "/assets/projects/privanote/privanote.png"
