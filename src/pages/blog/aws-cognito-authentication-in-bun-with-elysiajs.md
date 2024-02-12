@@ -4,7 +4,7 @@ title: "AWS Cognito Authentication in Bun with ElysiaJS"
 subtitle: "A guide on how to set up AWS Cognito authentication in Bun with ElysiaJS"
 description: AWS Cognito Authentication in Bun with ElysiaJS.
 name: Jason Xie
-date: Feb 11, 2022
+date: Feb 11, 2024
 # img: "/assets/projects/privanote/privanote.png"
 # repoLink: "https://github.com/PrivaNoteTeam/PrivaNote"
 # demoLink: "https://www.youtube.com/watch?v=yCYnAPSgYa0&ab_channel=PrivaNoteTeam"
@@ -56,7 +56,7 @@ export const AuthMiddleware = async ({ bearer }: any) => {
 };
 ```
 
-After Feb 11, 2024
+After Feb 11, 2024 or when the fix is merged
 
 Refer to the following links for more information:
 
